@@ -1,12 +1,12 @@
-/* Geral da página */
+
 body {
-    background-color: #ffe6f0;  /* Fundo rosa claro */
-    color: #4b006e;             /* Cor do texto principal */
+    background-color: #ffe6f0;  /* fundo rosa claro */
+    color: #4b006e;             /* cor do texto principal */
     font-family: Arial, sans-serif;
     margin: 20px;
 }
 
-/* Títulos */
+/* para titulos */
 h1 {
     color: #cc00cc;
     text-align: center;
@@ -20,13 +20,13 @@ h3 {
     color: #800080;
 }
 
-/* Linhas horizontais */
+/* para linhas horizontais */
 hr {
     border: 1px solid #cc99cc;
     margin: 20px 0;
 }
 
-/* Links */
+/* links */
 a {
     color: #800080;
     text-decoration: none;
@@ -37,7 +37,6 @@ a:hover {
     color: #cc00cc;
 }
 
-/* Menu (lista de links) */
 ul {
     list-style: none;
     padding: 0;
@@ -54,7 +53,7 @@ ul li a:hover {
     background-color: #ffccff;
 }
 
-/* Tabelas */
+/* tabelas */
 table {
     width: 100%;
     border-collapse: collapse;
@@ -72,7 +71,7 @@ table th {
     background-color: #ffccff;
 }
 
-/* Formulário */
+/* formulario */
 form {
     background-color: #fff0f5;
     padding: 20px;
@@ -112,7 +111,6 @@ img {
     margin: 10px auto;
 }
 
-/* Preformatados (<pre>) */
 pre {
     background-color: #ffe6f0;
     padding: 10px;
@@ -120,7 +118,6 @@ pre {
     overflow-x: auto;
 }
 
-/* Marcações (<mark>) */
 mark {
     background-color: #ffccff;
 }
