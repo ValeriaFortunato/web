@@ -5,23 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{margin: 0px; padding:0px; box-sizing:border-box}
-        body{height: 100vh; font-size:0px;
-
-    }
-    .box{border:1px solid black;
-        font-size:16px;
-        display: inline-block;
-        width: 25vh;
-        height: 50vh;
-    }
-        #box1{background-color:blue;}
-        #box2{background-color:green;}
-        #box3{background-color:red;}
-        #box4{background-color: yellow;}
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            border:1px solid white ;
+            min-height:100vh;
+            font-size:0; 
+        }
+        .box{
+            display:inline-block;
+            width:100px;
+            height:100px;
+            text-align:center;
+            line-height:100px;
+            font-size:16px; 
+            font-weight:bold;
+        }
+        #box1{background: purple;}
+        #box2{background: green;}
+        #box3{background: red;}
+        #box4{background: yellow;}
     </style>
 </head>
 <body>
-<div id="box1" class="box">1</div><div id="box2" class="box">2</div><div id="box3" class="box">3</div><div id="box4" class="box">4</div>
+    <div id="box1" class="box">1</div>
+    <div id="box2" class="box">2</div>
+    <div id="box3" class="box">3</div>
+    <div id="box4" class="box">4</div>
 </body>
 </html>
+
+<!-- os elementos ficam lado a lado porque foi usado display: inline-block
+esse tipo de display permite que os elementos fiquem na mesma linha, mas ainda respeitem largura e altura
+assim os 4 boxes aparecem alinhados horizontalmente, um ao lado do outro.-->
