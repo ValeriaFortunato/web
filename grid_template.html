@@ -12,6 +12,17 @@
                             "footer footer footer";
        height: 100vh;
     }
+    @media (max-width:700px) {
+        .container{display:grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:"header"
+                            "main"
+                            "empty"
+                            "sidebar"
+                            "footer";
+      
+    }
+}
     #box1{background-color:orange;
         grid-area: header;
         border-radius: 10%;
