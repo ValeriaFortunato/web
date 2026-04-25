@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        @keyframes animacaoBotao {
+            from { background-color: pink; }
+            to { background-color: hotpink; }
+        }
+
+
+        button {
+            background-color: pink;
+            border: 1px solid hotpink;
+            padding: 10px;
+            cursor: pointer;
+        }
+
+
+               button:hover {
+            animation: animacaoBotao 0.5s;
+        }
+
+
+        .estrelinha::after {
+            content: " ✨";
+        }
+    </style>
+</head>
+<body>
+
+
+    <div>
+        <h1>Questão 2</h1>
+        <h2>Definição da Regra CSS</h2>
+        <p>
+            Uma regra CSS serve para dar estilo a elementos no HTML, ela tem o seletor, 
+            que diz qual elemento será editado, e dentro das chaves as propriedades
+            e valores.
+        </p>
+
+
+        <p>
+            <strong>Exemplo das partes:</strong> <br>
+            Seletor: button <br>
+            Propriedade: background-color <br>
+            Valor: pink
+        </p>
+    </div>
+
+
+    <div>
+        <button>Passe o mouse aqui e veja a magica</button>
+        <p class="estrelinha">Estrela bonitinha por causa do pseudo elemento</p>
+    </div>
+
+
+</body>
+</html>

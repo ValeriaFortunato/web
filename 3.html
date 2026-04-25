@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+
+
+        .container-bandeiras {
+            display: flex;
+            gap: 30px;
+            padding: 25px;
+        }
+
+        .franca {
+            width: 400px;
+            height: 220px;
+            border: 2px solid black;
+            display: flex;}
+
+
+        .faixavertical {
+            flex: 1;
+        }
+
+        .azul { background-color: blue; }
+        .branco { background-color: white; }
+        .vermelho { background-color: red; }
+
+        .alemanha {
+            width: 400px;
+            height: 220px;
+            border: 2px solid black;
+            display: flex;
+            flex-direction: column;
+    }
+
+
+        .faixahorizontal {
+            flex: 1;
+        }
+
+
+        .preto { background-color: black; }
+        .vermelhoalemanha { background-color: red; }
+        .amarelo { background-color: yellow; }
+
+        .japao {
+            width: 400px;
+            height: 220px;
+            border: 2px solid black;
+            display: flex;
+            background-color: white;
+            justify-content: center;
+            align-items: center;
+    }
+
+
+        .circulovermelho {
+            width: 120px;
+            height: 120px;
+            background-color: red;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <h1>Questão 3</h1>
+
+    <div class="container-bandeiras">
+
+        <div class="franca">
+            <div class="faixavertical azul"></div>
+            <div class="faixavertical branco"></div>
+            <div class="faixavertical vermelho"></div>
+        </div>
+
+
+        <div class="alemanha">
+            <div class="faixahorizontal preto"></div>
+            <div class="faixahorizontal vermelhoalemanha"></div>
+            <div class="faixahorizontal amarelo"></div>
+        </div>
+
+        <div class="japao">
+            <div class="circulovermelho"></div>
+
+        </div>
+
+
+    </div>
+
+</body>
+</html>
