@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 5b</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+        }
+
+        .quadrobranco {
+            display: flex;
+            height: 100%;
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+        .ladoesquerdo {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .partecima {
+            flex: 2;
+            display: flex;
+            gap: 10px;
+        }
+
+        .colunameio {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .blocolaranja { background: #f39c12; flex: 2; }
+        .blocoazul { background: #a9cce3; flex: 1; }
+        .blocorosa { background: #f5b7b1; flex: 1; }
+        .blocoamarelo { background: #f7dc6f; flex: 1; }
+
+        .ladodireito {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .blocoverdeagua { background: #d1f2eb; flex: 1; }
+
+        .partedibaixo {
+            flex: 2;
+            display: flex;
+            gap: 10px;
+        }
+
+        .blocoverdeforte { background: #abebc6; flex: 3; }
+
+        .blocobolinhas {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+        @media (max-width: 600px) {
+            .quadrobranco {
+                flex-direction: column;
+            }
+
+            .partecima {
+                flex-direction: column;
+            }
+
+            .partedibaixo {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="quadrobranco">
+        <div class="ladoesquerdo">
+            <div class="partecima">
+                <div class="colunameio">
+                    <div class="blocolaranja"></div>
+                    <div class="blocoazul"></div>
+                </div>
+                <div class="colunameio">
+                    <div class="blocorosa"></div>
+                </div>
+            </div>
+            <div class="blocoamarelo"></div>
+        </div>
+
+        <div class="ladodireito">
+            <div class="blocoverdeagua"></div>
+            <div class="partedibaixo">
+                <div class="blocoverdeforte"></div>
+                <div class="blocobolinhas">
+                    <div class="circulo" style="background: #edbb99;"></div>
+                    <div class="circulo" style="background: #ebdef0;"></div>
+                    <div class="circulo" style="background: #d4efdf;"></div>
+                    <div class="circulo" style="background: #e8daef;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

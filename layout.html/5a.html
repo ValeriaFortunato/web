@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Questão 5a</title>
+    <style>
+
+
+        body {
+            margin: 0;
+            height: 100vh;}
+
+        .quadrobranco {
+            background-color: white;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            gap: 10px;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+
+
+        .ladoesquerdo {
+            flex: 2;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+    }
+
+        .partecima {
+            flex: 2;
+            display: flex;
+            gap: 10px;
+        }
+
+        .colunameio {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+
+        .blocolaranja { background-color: #f39c12; flex: 2; }
+        .blocoazul { background-color: #a9cce3; flex: 1; }
+        .blocorosa { background-color: #f5b7b1; flex: 1; }
+        .blocoamarelo { background-color: #f7dc6f; flex: 1; }
+
+
+        .ladodireito {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;}
+
+        .blocoverdeagua { background-color: #d1f2eb; flex: 1; }
+
+        .partedibaixo {
+            flex: 2;
+            display: flex;
+            gap: 10px;
+        }
+
+        .blocoverdeforte { background-color: #abebc6; flex: 3; }
+
+        .blocobolinhas {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+        }
+
+
+    </style>
+</head>
+<body>
+
+    <div class="quadrobranco">
+        <div class="ladoesquerdo">
+            <div class="partecima">
+                <div class="colunameio">
+                    <div class="blocolaranja"></div>
+                    <div class="blocoazul"></div>
+                </div>
+                <div class="colunameio">
+                    <div class="blocorosa"></div>
+                </div>
+            </div>
+            <div class="blocoamarelo"></div>
+        </div>
+
+        
+        <div class="ladodireito">
+            <div class="blocoverdeagua"></div>
+            <div class="partedibaixo">
+                <div class="blocoverdeforte"></div>
+                <div class="blocobolinhas">
+                    <div class="circulo" style="background-color: #edbb99;"></div>
+                    <div class="circulo" style="background-color: #ebdef0;"></div>
+                    <div class="circulo" style="background-color: #d4efdf;"></div>
+                    <div class="circulo" style="background-color: #e8daef;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+</html>
