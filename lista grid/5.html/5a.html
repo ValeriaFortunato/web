@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5b</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            padding: 20px;
+            gap: 10px;
+            /* Mantendo a estrutura de colunas e áreas da 5a */
+            grid-template-columns: 1.5fr 1fr 1.5fr 60px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                "caixa1 caixa4 caixa5 circles"
+                "caixa2 caixa4 caixa6 circles"
+                "caixa3 caixa3 caixa6 circles";
+        }
+
+        /* Cores idênticas ao modelo original */
+        .c1 { grid-area: caixa1; background-color: #ff9800; } 
+        .c2 { grid-area: caixa2; background-color: #c5d0e6; } 
+        .c3 { grid-area: caixa3; background-color: #ffb74d; } 
+        .c4 { grid-area: caixa4; background-color: #f4b6af; } 
+        .c5 { grid-area: caixa5; background-color: #d1e0e0; } 
+        .c6 { grid-area: caixa6; background-color: #c0ca33; } 
+
+        .side {
+            grid-area: circles;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .dot {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .d1 { background-color: #ff8a65; }
+        .d2 { background-color: #d4a5a5; }
+        .d3 { background-color: #dce775; }
+        .d4 { background-color: #ce93d8; }
+
+        /* --- RESPONSIVIDADE 5b (LISTA VERTICAL) --- */
+        @media (max-width: 600px) {
+            body {
+                /* Força a virar uma lista vertical simples */
+                display: flex;
+                flex-direction: column;
+                height: auto;
+                grid-template-areas: none; 
+            }
+
+            /* Estiliza os blocos para ficarem um sobre o outro */
+            .c1, .c2, .c3, .c4, .c5, .c6 {
+                width: 100%;
+                height: 150px; /* Altura definida para a lista */
+                border-radius: 4px;
+            }
+
+            .side {
+                flex-direction: row; /* Círculos ficam na horizontal no fim da lista */
+                width: 100%;
+                height: 80px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="c1"></div>
+    <div class="c2"></div>
+    <div class="c3"></div>
+    <div class="c4"></div>
+    <div class="c5"></div>
+    <div class="c6"></div>
+
+    <div class="side">
+        <div class="dot d1"></div>
+        <div class="dot d2"></div>
+        <div class="dot d3"></div>
+        <div class="dot d4"></div>
+    </div>
+
+</body>
+</html>

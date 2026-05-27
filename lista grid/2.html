@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 2 - Corrigida</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; } 
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "header header" 
+                "nav contenti"
+                "nav footer";
+            
+            grid-template-rows: 100px 1fr 80px; 
+            grid-template-columns: 200px 1fr;
+            
+            min-height: 100vh; 
+        }
+
+        .box {
+            border: 1px solid black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.5rem;
+            font-family: sans-serif;
+        }
+
+        #box1 { grid-area: header; background-color: #e91e63; }
+        #box2 { grid-area: nav; background-color: #cddc39; }
+        #box3 { grid-area: contenti; background-color: #ffb74d; }
+        #box4 { grid-area: footer; background-color: #4db6ac; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1"><strong>Header</strong></div>
+        <div class="box" id="box2"><strong>Nav</strong></div>
+        <div class="box" id="box3"><strong>Content</strong></div>
+        <div class="box" id="box4"><strong>Footer</strong></div>
+    </div>
+</body>
+</html>

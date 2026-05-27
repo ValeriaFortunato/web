@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 3</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fff;
+            padding: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-areas: 
+                "A A . B" 
+                "C S S S";
+            grid-template-rows: 150px 1fr;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 20px;
+            min-height: 90vh; 
+        }
+
+        .dark-box {
+            background-color: #444; 
+            color: white;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: serif;
+            font-weight: bold;
+            font-size: 1.5rem;
+        }
+
+        #boxA { grid-area: A; }
+        #boxB { grid-area: B; }
+        #boxC { grid-area: C; }
+
+        #boxs {
+            grid-area: S;
+            display: grid;
+            grid-template-areas: 
+                "E F G" 
+                "M I J";
+            grid-template-columns: 1fr 2fr 1fr; 
+            gap: 15px;
+        }
+
+        .light-box {
+            background-color: #ccc; 
+            color: #333;
+            padding: 15px;
+            border-radius: 5px;
+            display: flex;
+            align-items: flex-start; 
+            justify-content: flex-start; 
+        }
+
+        #boxE { grid-area: E; }
+        #boxF { grid-area: F; }
+        #boxG { grid-area: G; }
+        #boxM { grid-area: M; }
+        #boxI { grid-area: I; }
+        #boxJ { grid-area: J; }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div id="boxA" class="dark-box">A</div>
+        <div id="boxB" class="dark-box">B</div>
+        <div id="boxC" class="dark-box">C</div>
+        
+        <div id="boxs" class="dark-box"> <div id="boxE" class="light-box">E</div>
+            <div id="boxF" class="light-box">F</div>
+            <div id="boxG" class="light-box">G</div>
+            <div id="boxM" class="light-box">M</div>
+            <div id="boxI" class="light-box">I</div>
+            <div id="boxJ" class="light-box">J</div>
+        </div>
+    </div>
+</body>
+</html>

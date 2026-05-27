@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Questão 5b</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            min-height: 100vh;
+            display: grid;
+            padding: 15px;
+            gap: 12px;
+            /* Layout Desktop (Mosaico) */
+            grid-template-columns: 1.5fr 1fr 1.5fr 60px;
+            grid-template-rows: repeat(3, 1fr);
+            grid-template-areas: 
+                "area1 area4 area5 dots"
+                "area2 area4 area6 dots"
+                "area3 area3 area6 dots";
+        }
+
+        /* Cores fiéis ao modelo original */
+        .bloco-1 { grid-area: area1; background-color: #ffa726; }
+        .bloco-2 { grid-area: area2; background-color: #b0bec5; }
+        .bloco-3 { grid-area: area3; background-color: #ffb74d; }
+        .bloco-4 { grid-area: area4; background-color: #ef9a9a; }
+        .bloco-5 { grid-area: area5; background-color: #cfd8dc; }
+        .bloco-6 { grid-area: area6; background-color: #cddc39; }
+
+        .painel-circulos {
+            grid-area: dots;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .circulo {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        .cor-1 { background-color: #ff8a65; }
+        .cor-2 { background-color: #d7ccc8; }
+        .cor-3 { background-color: #dce775; }
+        .cor-4 { background-color: #ce93d8; }
+
+        /* --- RESPONSIVIDADE (ABAIXO DE 600PX) --- */
+        @media (max-width: 600px) {
+            body {
+                /* Muda para uma única coluna */
+                grid-template-columns: 1fr;
+                /* Remove as áreas complexas e empilha tudo verticalmente */
+                grid-template-areas: none; 
+                display: flex;
+                flex-direction: column;
+                height: auto;
+            }
+
+            /* Define uma altura padrão para os blocos na lista vertical */
+            .bloco-1, .bloco-2, .bloco-3, .bloco-4, .bloco-5, .bloco-6 {
+                width: 100%;
+                height: 120px;
+                border-radius: 5px;
+            }
+
+            .painel-circulos {
+                flex-direction: row; /* Círculos ficam lado a lado no final da lista */
+                width: 100%;
+                height: 80px;
+                padding: 10px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="bloco-1"></div>
+    <div class="bloco-2"></div>
+    <div class="bloco-3"></div>
+    <div class="bloco-4"></div>
+    <div class="bloco-5"></div>
+    <div class="bloco-6"></div>
+
+    <div class="painel-circulos">
+        <div class="circulo cor-1"></div>
+        <div class="circulo cor-2"></div>
+        <div class="circulo cor-3"></div>
+        <div class="circulo cor-4"></div>
+    </div>
+
+</body>
+</html>
