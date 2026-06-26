@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculo imc</title>
+
+    <style>
+        body {
+            font-family: arial, sans-serif;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        form {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input[type="text"] {
+            width: 300px;
+            padding: 5px;
+            margin-top: 5px;
+        }
+
+        button {
+            margin-top: 10px;
+            padding: 5px 10px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>calculo de imc</h1>
+
+    <form method="get" action="imc10-2.php">
+
+        <label for="nome">digite seu nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="email">digite seu email:</label>
+        <input type="text" id="email" name="email" required>
+
+        <button type="submit">calcular</button>
+
+    </form>
+
+</body>
+</html>
