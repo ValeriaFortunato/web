@@ -26,7 +26,7 @@
     }
     ?>
 
-    <form method="post" action="imc10.3.php">
+    <form method="post" action="imc10-3.php">
 
         <label for="peso">digite seu peso (kg):</label>
         <input type="text" id="peso" name="peso" required>
